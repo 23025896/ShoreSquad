@@ -1,17 +1,8 @@
 // ShoreSquad Main Application
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize application components
-    initMap();
     initWeather();
 });
-
-// Map initialization function
-async function initMap() {
-    const mapContainer = document.getElementById('map');
-    // TODO: Implement map integration
-    // Placeholder for map implementation
-    mapContainer.innerHTML = '<div class="placeholder">Map loading...</div>';
-}
 
 // Weather tracking initialization
 async function initWeather() {
