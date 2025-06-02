@@ -1,0 +1,106 @@
+:root {
+    /* Color palette inspired by beach and ocean themes */
+    --primary: #1a9cbd;    /* Ocean blue */
+    --secondary: #f4d03f;  /* Sandy yellow */
+    --accent: #e67e22;     /* Sunset orange */
+    --light: #ecf0f1;      /* Foam white */
+    --dark: #2c3e50;       /* Deep ocean */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+header {
+    background-color: var(--primary);
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--light);
+}
+
+.nav-links a {
+    color: var(--light);
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--secondary);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#hero {
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+#map, #weather {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 2rem 0;
+    min-height: 400px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+    }
+
+    .nav-links a {
+        margin: 0 1rem;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+}
